@@ -18,11 +18,38 @@
   <link href="static/css/owl.carousel.min.css" rel="stylesheet" />
   <link href="static/css/lightbox.min.css" rel="stylesheet" />
   <link href="static/css/style.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   <script src="static/js/jquery.min.js"></script>
 
 </head>
 
 <body>
+
+  <div id="app">
+    <modal v-if="showModal" @close="closeModal">
+      <p>测试</p>
+    </modal>
+  </div>
+
+  <script src="./static/js/modal.js"></script>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        showModal: false
+      },
+      methods: {
+        closeModal() {
+          this.showModal = false;
+        }
+      },
+      created() {
+        this.showModal = true;
+      }
+    });
+  </script>
+
   <header id="header">
     <div class="container-fluid">
       <div class="pull-left" id="logo">
