@@ -1,0 +1,1 @@
+function hitokoto() { document.write("Don't care too much. If you care too much, you will start to fear losing"); }

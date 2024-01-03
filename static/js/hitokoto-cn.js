@@ -1,0 +1,1 @@
+﻿function hitokoto() { document.write("不要太在意，太在意会开始害怕失去"); }
