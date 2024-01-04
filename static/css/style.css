@@ -267,23 +267,24 @@ h6 {
   cursor: pointer;
 }
 
-#intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
+.btn-get-started {
   display: inline-block;
-  padding: 8px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #fff;
-  background: #87CEEB;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid rgba(52, 152, 219, 1);
+  border-radius: 100px;
+  color: rgba(52, 152, 219, 1);
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-#intro .btn-get-started:hover {
-  background: #fff;
-  color: #87CEEB;
+.btn-get-started:hover {
+  background-color: rgba(192, 114, 186, 0.247);
+  color: rgba(255, 255, 255, 0.767);
 }
 
 /*--------------------------------------------------------------
